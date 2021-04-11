@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="control-panel">
+        <div class="section">
+            <h4 class="heading">Border</h4>
+            <div class="controls">
+                <div class="control">
+                    <label for="control-border-width">Width: </label>
+                    <input id="control-border-width" type="range" name="borderWidth" min="10" max="40" data-suffix="px" value="20">
+                </div>
+                <div class="control">
+                    <label for="control-border-radius">Radius: </label>
+                    <input id="control-border-radius" type="range" name="borderRadius" min="0" max="200" data-suffix="px" value="30">
+                </div>
+                <div class="control">
+                    <label for="control-border-color">Color</label>
+                    <input id="control-border-color" type="color" name="borderColor" value="#2e5f6b">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h4 class="heading">Blur</h4>
+            <div class="controls">
+                <div class="control">
+                    <label for="control-blur-strength">Strength</label>
+                    <input id="control-blur-strength" type="range" name="blurStrength" min="0" max="20" data-suffix="px" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h4 class="heading">Color</h4>
+            <div class="controls">
+                <div class="control">
+                    <label for="control-color-background">Background Color</label>
+                    <input id="control-color-background" type="color" name="backgroundColor" value="#0c2a31">
+                </div>
+                <div class="control">
+                    <label for="control-color-text">Text Color</label>
+                    <input id="control-color-text" type="color" name="textColor" value="#fff">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="canvas">
+        <h4>Change the sliders and color</h4>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
